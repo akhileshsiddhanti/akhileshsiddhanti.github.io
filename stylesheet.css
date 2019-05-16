@@ -1,3 +1,114 @@
-#home{
-    background: pink;
+body{
+    /* background: white;
+    display: block;
+    padding: 0px; */
+    /* margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; */
+    background:rgba(112,122,138,0.9);
+    background: white;
+    /* top: 0; */
+}
+
+.top-bar-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    /* background: rgb(112,122,138); */
+    background: inherit;
+    color: white;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    /* margin-top: -5px; */
+}
+.top-bar-child{
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.top-bar-container a{
+    float: left;
+    text-align: center;
+    width: 120px;
+    position: relative;
+    padding: 10px;
+}
+
+/* .top-bar-container li a{
+    
+} */
+
+.top-bar{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: rgb(112,122,138);  */
+    background: inherit;
+    color: white;
+    float: right;
+}
+/*
+.topbar a{
+    background: black;
+    padding: 14px;
+    text-decoration: none;
+    width: 100px;   
+    border-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.topbar a.active{
+    background: green;
+}
+*/
+.top-bar-container a:hover{
+    /* background: green; */
+    color: orange;
+} 
+
+.top-bar-container a{
+    text-decoration: none;
+    color: black;
+}
+
+a.active{
+    /* background: blue; */
+    color:rgb(0,214,70); 
+    text-decoration: none;
+}
+
+.top-bar .text{
+    position: fixed;
+    float: left;
+    color: black;
+}
+
+
+.me{
+    color: black;
+    font: bold;
+    font-size: 50px;    
+    font-family: 'Times New Roman', Times, serif;    /* text-align: center; */
+    /* width: 100%; */
+    position: absolute;
+    /* height: 100%; */
+    top: 45%;
+    left: 50%;
+}
+
+.green{
+    color: rgb(0,214,70);
 }
