@@ -1,3 +1,4 @@
+
 body{
     /* background: white;
     display: block;
@@ -11,19 +12,29 @@ body{
     /* top: 0; */
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+} 
+
 .dp{
     position: absolute;
     /* height: 95%; */
-    max-height: 95%;
-    left: 2.5%;
-    max-width: 50%;
-    top:   2.5%;
+    /* max-height: 90%; */
     /* width: 100%; */
 }
-.top-bar-container{
+
+.me{
+    color: black;
+    font: bold;
+    font-family: 'Times New Roman', Times, serif;    /* text-align: center; */
     position: absolute;
-    top: 0;
-    right: 0;
+    /* height: 100%; */
+    /* max-width: 30%; */
+}
+
+
+.top-bar-container{
     list-style: none;
     list-style-type: none;
     display: inline-block;
@@ -33,7 +44,6 @@ body{
     padding: 0px;
     width: 100%;
     margin: 0px;
-    position: relative;
     /* margin-top: -5px; */
 }
 .top-bar-child{
@@ -46,9 +56,9 @@ body{
 .top-bar-container a{
     float: left;
     text-align: center;
-    width: 120px;
+    width: 10em;
     position: relative;
-    padding: 10px;
+    padding: 1em;
 }
 
 /* .top-bar-container li a{
@@ -105,19 +115,117 @@ a.active{
     color: black;
 }
 
-
-.me{
-    color: black;
-    font: bold;
-    font-size: 50px;    
-    font-family: 'Times New Roman', Times, serif;    /* text-align: center; */
-    /* width: 100%; */
-    position: absolute;
-    /* height: 100%; */
-    top: 45%;
-    left: 50%;
-}
-
 .green{
     color: rgb(0,214,70);
+}
+
+@media screen and (min-width: 980px){
+
+    .dp{
+        position: absolute;
+        /* height: 95%; */
+        /* max-height: 90%; */
+        left: 2.5%;
+        max-width: 45%;
+        max-height: 90%;
+        top:   5%;
+        /* width: 100%; */
+    }
+    
+    .me{
+        color: black;
+        font: bold;
+        font-size: 50px;    
+        font-family: 'Times New Roman', Times, serif;    /* text-align: center; */
+        position: absolute;
+        /* height: 100%; */
+        top: 50%;
+        left: 50%;
+        /* max-width: 30%; */
+    }
+    
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+    .me{
+        top: 80%;
+        left: 20%;
+        /* text-align: center; */
+        align-content: center;
+        font-size: 50px;
+    }
+
+    .dp{
+        align-content: center;
+        top: 15%;
+        /* max-height: 80%; */
+        left: 25%;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .me{
+        top: 80%;
+        left: 20%;
+        /* text-align: center; */
+        align-content: center;
+        font-size: 30px;
+    }
+
+    .dp{
+        align-content: center;
+        top: 30%;
+        max-height: 50%;
+        max-width: 50%;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .me{
+        top: 80%;
+        left: 20%;
+        /* text-align: center; */
+        align-content: center;
+        font-size: 30px;
+    }
+
+    .dp{
+        align-content: center;
+        top: 30%;
+        max-height: 50%;
+        max-width: 50%;
+        left: 20%;
+    }
+
+    .top-bar-container{
+        height: 40%;
+    }
+
+    .top-bar-container a{
+        /* width: 5%; */
+        padding: 2%;
+    }
+
+}
+
+@media screen and (max-height: 780px){
+
+    .dp{
+        align-content: center;
+        top: 30%;
+        max-height: 50%;
+        width: unset;
+        /* max-width: 50%; */
+        left: 10%;
+    }
+
+    .me{
+        font-size: 30px;
+        top: 50%;
+        left: 50%; 
+    }
 }
