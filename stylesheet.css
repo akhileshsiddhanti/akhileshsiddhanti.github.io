@@ -12,9 +12,12 @@ body{
 }
 
 .dp{
-    height: 99%;
     position: absolute;
-
+    /* height: 95%; */
+    max-height: 95%;
+    left: 2.5%;
+    max-width: 50%;
+    top:   2.5%;
     /* width: 100%; */
 }
 .top-bar-container{
