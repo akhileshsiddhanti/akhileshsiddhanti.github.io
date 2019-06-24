@@ -41,7 +41,7 @@ body{
     /* flex: 1;
     flex-direction: column; */
     /* max-width: 40%; */
-    color: #90838d;
+    /* color: #90838d; */
     font: bold;
     font-family: 'Times New Roman', Times, serif;    /* text-align: center; */
     font-size: 50px;
@@ -54,43 +54,6 @@ body{
     display: flex;
 }
 
-.top-bar-container{
-    display: inline-block;
-    /* flex-direction:row ;
-    flex: 1; */
-    /* display: inline-block; */
-    list-style: none;
-    list-style-type: none;
-    /* background: rgb(112,122,138); */
-    background: inherit;
-    color: white;
-    padding: 0px;
-    width: 70%;
-    align-items: center;
-    margin: 0px;
-
-    margin-left: 13%;
-    /* margin-top: -5px; */
-}
-.top-bar-child{
-    width: 100%;
-    align-content: center;
-    float: none;
-    padding: 0px;
-    margin: 0px;
-    
-}
-
-.top-bar-container a{
-    float: left;
-    text-align: center;
-    width: 10em;
-    padding-right: 0.5%;
-    position: relative;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: 10px;
-}
 
 
 .top-bar{
@@ -98,25 +61,63 @@ body{
     padding: 0;
     overflow: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: inherit;
+    top: 40px;
+    left: 10%;
+    width: 80%;
+    /* left: 10%; */
+    /* right: 10%; */
+    
+    /* background: bisque; */
     color: white;
     float: right;
     /* background-color: #e6f0f2; */
     
 
 }
+
+.top-bar-container{
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* flex-direction:row ;
+    flex: 1; */
+    /* display: inline-block; */
+    list-style: none;
+    list-style-type: none;
+    /* background: rgb(112,122,138); */
+    /* background-color: aquamarine; */
+    color: white;
+    padding: 0px;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    /* margin-left: 13%; */
+    /* margin-top: -5px; */
+}
+
+.top-bar-container a{
+    float: left;
+    text-align: center;
+    width: 16%;
+    /* background: #90838d; */
+    /* padding-right: 0.5%; */
+    position: relative;
+    /* padding: 5px; */
+    font-size: 40px;
+    /* margin-top: 10px; */
+}
+
 .top-bar-container a:hover{
     /* background: green; */
     color: orange;
-    background-color: whitesmoke;
+    /* color: whitesmoke; */
 } 
 
 .top-bar-container a{
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 a.active{
@@ -133,6 +134,16 @@ a.active{
 .green{
     color: rgb(0,214,70);
 }
+
+.gmap{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    width:70%;
+    height: 80%;
+    left: 15%;
+}
+
 
 @media screen and (min-width: 1000px) and (max-width: 1260px){
 
