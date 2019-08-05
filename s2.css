@@ -23,6 +23,10 @@ html{
     padding-top: 0;
 }
 
+.sidenav .navlinks{
+    margin-top: 20%;
+}
+
 .sidenav img{
     width: 80%;
     height: 30%;
@@ -36,12 +40,27 @@ html{
     margin-top: 10%;
 }
 
-.sidenav a{
+.sidenav .name{
+    /* display: flex; */
+    color: white;
     text-align: center;
+    font-size: 28px;
+    /* font-family: "Lato", Helvetica, sans-serif; */
+    font-family: 'Lato';
+    padding-left: 10%; 
+    /* padding-bottom: 10%; */
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: 15%;
+}
+
+.sidenav a{
+    text-align: left;
     padding: 8px;
     /* margin-left: 40%; */
     margin-right:10%;
-    margin-top: 5%;
+    margin-bottom: 3%;
+    /* margin-top: 5%; */
     padding-left: 0;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-family: 'Lato';
@@ -51,33 +70,32 @@ html{
     /* padding: 10% 10% 10% 10%; */
     /* padding-top: 10%; */
     /* font-size:0.75rem; */
-    margin-left: 18%;
+    margin-left: 20%;
     width: 60%;  
+    padding-left: 7%;
     text-decoration: none;
     /* font-size: 25px; */
     color: #818181;
-    border-left-width: 4px;
-    border-left-style: solid;
-    border-left-color: #2b2b2b;
-    background-color: #2b2b2b;
+    /* border-left-width: 4px; */
+    /* border-left-style: solid;  */
+    /* border-left-color: #2b2b2b; */
+    /* background-color: #2b2b2b; */
     display: block;
     
     /*transition: 0.3s; */
 }
- 
-.sidenav .name{
-    /* display: flex; */
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    font-family: "Lato", Helvetica, sans-serif;
-    padding-left: 10%; 
-    /* padding-bottom: 10%; */
-    font-weight: 300;
-    width: 80%;
-    margin-bottom: 15%;
+
+.sidenav .active{
+    border-left-style: solid;
+    border-left-color: #2b2b2b;
+    border-left-width: 4px;
+    color: green;
+    /* padding-left: -10px; */
 }
 
+.sidenav i{
+    margin-right: 10%;
+}
 
 .main-content{
     /* font-family: 'Courier New', Courier, monospace; */
@@ -123,4 +141,77 @@ html{
     text-decoration: none;
     color: black;
     font-weight: 900;
+}
+
+.mobile-menu{
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}  
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+  /* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+  
+  /* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+  
+  /* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+@media screen and (max-width: 980px){
+    .sidenav{
+        width: 0%;
+        display: none;
+        position: absolute;
+        height: auto;
+    }
+
+    .sidenav img{
+        max-height: 350px;
+    }
+
+    .sidenav a{
+        font-size: 35;
+    }
+
+    .sidenav .name{
+        margin-bottom: 0%;
+    }
+
+    .navlinks{
+        margin-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .main-content{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .mobile-menu{
+        display: inline-block;
+    }
+
+    .sidenav .active{
+        margin-top: 0;
+    }
 }
