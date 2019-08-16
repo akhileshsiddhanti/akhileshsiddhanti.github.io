@@ -36,7 +36,7 @@ html{
     margin-bottom: 10%;
 }
 
-.sidenav .active{
+.sidenav .home{
     margin-top: 10%;
 }
 
@@ -175,7 +175,39 @@ html{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.education{
+    margin-top: 2%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
 
+.education td{
+    width: 50%;
+    align-items: center;
+}
+.education img{      
+    /* width: 20%; */
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.findme{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.findme td{
+    align-items: center;
+    text-align: center;
+    /* background: #2b2b2b; */
+    width: 20%;
+    padding: 10%;
+}
 
 @media screen and (max-width: 980px){
     .sidenav{
@@ -211,7 +243,7 @@ html{
         display: inline-block;
     }
 
-    .sidenav .active{
+    .sidenav .home{
         margin-top: 0;
     }
 }
