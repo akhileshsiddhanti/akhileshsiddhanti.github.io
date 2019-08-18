@@ -101,6 +101,7 @@ html{
     /* font-family: 'Courier New', Courier, monospace; */
     margin-left: 22%;
     width: 78%;
+    font-family: 'Arial';
     /* display: flex; */
     /* height: 100%; */
     /* padding-top: 100px; */
@@ -118,13 +119,15 @@ html{
 
 .main-content .about-content{
     /* display: flex; */
-    width: 80%;
+    width: 90%;
     align-content: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .main-content table{
     width: 80%;
+    margin-left: 10%;
     /* display: flex; */
     /* object-fit: contain; */
 }
@@ -132,6 +135,7 @@ html{
 .main-content td{
     align-items: center;
     text-align: center;
+    padding-bottom: 10px;
     /* padding: 30px;
     padding-left: 60px;
     padding-right: 60px; */
@@ -188,13 +192,22 @@ html{
     width: 50%;
     align-items: center;
 }
-.education img{      
+.education img{
+    padding: 0;
+    /* position: relative;       */
     /* width: 20%; */
-    height: 100%;
+    /* height: 100%; */
     object-fit: fill;
 }
 
+.education .bits{
+    width: 40%;
+    
+}
 
+.education .gt{
+    width: 40%;
+}
 .findme{
     align-items: center;
     text-align: center;
@@ -206,7 +219,37 @@ html{
     text-align: center;
     /* background: #2b2b2b; */
     width: 20%;
-    padding: 10%;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.findme img{
+    padding-bottom: 10px;
+}
+
+.findme i{
+    padding-bottom: 10px;
+}
+
+.icons{
+    width: 64px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.about-research-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    width: 90%;
+}
+
+.about-research-content a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 980px){
