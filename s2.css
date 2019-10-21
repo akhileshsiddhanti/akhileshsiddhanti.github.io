@@ -1,12 +1,8 @@
 body{
-    /* margin: 0px;
-    padding: 0px; */
+
 }
 html{
-    /* height: 100%; */
-    /* width: 100%;
-    padding: 0px;
-    margin: 0px; */
+
 }
 
 .sidenav{
@@ -49,7 +45,7 @@ html{
     font-family: 'Lato';
     padding-left: 10%; 
     /* padding-bottom: 10%; */
-    font-weight: 300;
+    font-weight: 500;
     width: 80%;
     margin-bottom: 15%;
 }
@@ -152,11 +148,12 @@ html{
     display: none;
     cursor: pointer;
     position: absolute;
+    margin-top: 3px;
 }  
 
 .bar1, .bar2, .bar3 {
-    width: 100px;
-    height: 20px;
+    width: 50px;
+    height: 10px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
@@ -252,7 +249,9 @@ html{
     font-weight: 900;
 }
 
-@media (max-width: 980px),(max-height: 600px){
+
+
+@media screen and (max-width: 1000px),(max-height: 600px){
     .sidenav{
         width: 0%;
         display: none;
@@ -265,20 +264,22 @@ html{
     }
 
     .sidenav a{
-        font-size: 35;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 
     .sidenav .name{
-        margin-bottom: 0%;
+        margin-bottom: -15%;
     }
 
     .navlinks{
         margin-top: 10%;
+        font-size: 10px;
         padding-bottom: 20%;
     }
 
     .main-content{
-        margin-left: 5%;
+        margin-left: 60px;
         width: 90%;
     }
 
