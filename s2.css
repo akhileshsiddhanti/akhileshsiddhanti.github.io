@@ -17,6 +17,7 @@ html{
     margin-left: 0;
     height: 100%; 
     padding-top: 0;
+    overflow-y:auto;
 }
 
 .sidenav .navlinks{
@@ -52,33 +53,19 @@ html{
 
 .sidenav a{
     text-align: left;
-    padding: 8px;
-    /* margin-left: 40%; */
+    padding: 0.2em;
     margin-right:10%;
     margin-bottom: 3%;
-    /* margin-top: 5%; */
     padding-left: 0;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-    font-family: fantasy;
-
+    font-family: fantasy, Arial, Helvetica, sans-serif;
     font-size: 1.3vw;
-    /* text-align: center; */
-    /* padding: 10% 10% 10% 10%; */
-    /* padding-top: 10%; */
-    /* font-size:0.75rem; */
+    
     margin-left: 20%;
     width: 60%;  
     padding-left: 7%;
     text-decoration: none;
-    /* font-size: 25px; */
     color: #818181;
-    /* border-left-width: 4px; */
-    /* border-left-style: solid;  */
-    /* border-left-color: #2b2b2b; */
-    /* background-color: #2b2b2b; */
     display: block;
-    
-    /*transition: 0.3s; */
 }
 
 .sidenav a:hover{
@@ -125,20 +112,9 @@ html{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-content table{
-    /* width: 80%; */
-    /* margin-left: 10%; */
-    /* display: flex; */
-    /* object-fit: contain; */
-}
-
 .main-content td{
     align-items: center;
     text-align: center;
-    /* padding-bottom: 10px; */
-    /* padding: 30px;
-    padding-left: 60px;
-    padding-right: 60px; */
 }
 
 .about-content a{
@@ -195,9 +171,6 @@ html{
 }
 .education img{
     padding: 0;
-    /* position: relative;       */
-    /* width: 20%; */
-    /* height: 100%; */
     object-fit: fill;
 }
 
