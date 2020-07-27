@@ -160,7 +160,6 @@ html{
     margin-left: 10%;
     align-items: left;
     text-align: left;
-    display: flex;
     width: 70%;
 }
 
@@ -170,18 +169,14 @@ html{
 
 }
 .education img{
+    width: 100%;
     padding: 0;
     object-fit: fill;
 }
 
-.education .bits{
-    width: 40%;
-    
-}
 
 .university {
-    display: flow;
-    width: 200%;
+
 }
 
 .university-details {
@@ -189,9 +184,6 @@ html{
     padding-left: 10%;
 }
 
-.education .gt{
-    width: 40%;
-}
 .findme{
     align-items: center;
     text-align: center;
