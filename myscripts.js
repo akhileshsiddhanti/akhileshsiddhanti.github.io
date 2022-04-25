@@ -29,3 +29,6 @@ function expand_sidebar(x){
     }
 
 }
+
+function highlight_sidemenu(x) {
+}
