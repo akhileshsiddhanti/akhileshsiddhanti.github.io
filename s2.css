@@ -72,3 +72,11 @@ li:last-child { margin-bottom: 0; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 .education-card h3 { margin: 0 0 12px; }
+
+/* Highlight completed work with readable project summaries. */
+.highlights strong { font-size: 18px; line-height: 1.35; margin-bottom: 10px; }
+.highlights span { display: block; font-size: 15px; line-height: 1.65; }
+.career-work { list-style: none; padding: 0; }
+.career-work > li { border-top: 1px solid var(--line); padding: 22px 0 0; margin-bottom: 24px; }
+.career-work > li > strong { display: block; font-size: 19px; line-height: 1.45; margin-bottom: 10px; color: #142c3c; }
+.career-work p { margin: 0; }
