@@ -4,10 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Akhilesh Siddhanti — software engineer and researcher working on AI agents, vector search, machine learning, and developer productivity.">
-    <title>
-            Akhilesh Siddhanti | Research
-        </title>
-    <link type="text/css" rel="stylesheet" href="s2.css?v=20261011-career">
+    <title>Akhilesh Siddhanti | Research &amp; Publications</title>
+    <link type="text/css" rel="stylesheet" href="s2.css?v=20261011-research">
     <link rel="stylesheet" href="css/academicons.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="myscripts.js" defer></script>
@@ -23,7 +21,8 @@
       <nav class="navlinks" aria-label="Main navigation">
         <a class="home" href="index.html">
           <i class="fa fa-home fa-fw fa-1x" aria-hidden="true"></i> Home</a>
-        <a href="index.html#Experience"><i class="fa fa-code fa-fw fa-1x" aria-hidden="true"></i> Experience</a>
+        <a href="index.html#Experience">
+          <i class="fa fa-code fa-fw fa-1x" aria-hidden="true"></i> Experience</a>
         <a class="" href="education.html">
           <i class="fa fa-university fa-fw fa-1x" aria-hidden="true"></i> Education</a>
         <a class="active" href="research.html">
@@ -38,60 +37,135 @@
     </aside>
     <main id="main">
       <section class="main-content">
-        <h1 class="about">Research</h1>
-        <hr>
-        <p class="about-research-content">I worked on cryptography and cryptanalysis at the Indian Statistical Institute (ISI), Kolkata, and Nanyang Technological University (NTU), Singapore, including a year-long undergraduate thesis at ISI. My work studied how fault attacks, side-channel attacks, and time-memory-data tradeoffs can expose weaknesses in stream and block ciphers. I also applied machine learning to the problem of identifying fault locations in a cipher.</p>
-<p>
-          <strong>11 research papers</strong> in international conferences and journals; reviewer for 10+ IEEE submissions.</p>
-        <h3> Publications: </h3>
-        <h3> Cryptanalysis using Machine Learning</h3>
-        <ol>
-          <li>
-            <strong>Differential fault location identification by Machine Learning.</strong>
-            <br>CAAI Transactions on Intelligence Technology<br>Machine learning for fault-location identification in stream ciphers.</li>
-        </ol>
-        <h3> Cryptography &amp; Cryptanalysis</h3>
-        <ol>
-          <li>
-            <b>A TMDTO Attack Against Lizard</b>, 
-                IEEE Transactions on Computers (Journal)<br>
-                Cryptanalysis of stream cipher Lizard with a time complexity faster than brute-force search.<br>
-          </li>
-          <li>
-            <b>A Differential Fault Attack on Plantlet, </b>                            
-                IEEE Transactions on Computers (Journal)<br>
-                Demonstrated a Differential Fault Attack on Plantlet with minimum fault requirements.<br>
-          </li>
-          <li>
-            <b>Certain Observations on ACORN v3 and Grain v1 - Implications Towards TMDTO Attacks,</b>
-                Journal of Hardware and Systems Security (Journal)<br>
-                An extended work of conditional TMDTO attack on ACORN v3 and Grain v1.<br>
-          </li>
-          <li>
-            <b>
-                Differential Fault Attack on SIMON with Very Few Faults and minimal assumptions,
-                </b>
-                INDOCRYPT 2018 (Conference) <br>      
-                Showed how block ciphers can also be vulnerable to fault attacks, like stream ciphers.<br>
-          </li>
-          <li>
-            <b>
-                Differential Fault Attack on Grain v1, ACORN v3 and Lizard,
-                </b>
-                SPACE 2017  (Conference)<br>
-                Mounted fault attacks on popular stream ciphers using numerous optimizations.<br>
-          </li>
-          <li>
-            <b>Certain Observations on ACORN v3 and the Implications to TMDTO Attacks,</b>
-                SPACE 2017 (Conference).  <br>
-                Cryptanalysis of ACORN v3 using SAT solving techniques.<br>
-          </li>
-          <li>
-            <b>Differential fault attack on hardware stream ciphers -- A technical survey,</b>
-                RICAM Special Semester (Conference).<br>
-                A survey of various fault attack techniques employed to cryptanalyze stream ciphers.<br>
-          </li>
-        </ol>
+        <h1>Research &amp; publications</h1>
+        <p>My research asks how cryptographic implementations behave when their assumptions are challenged: what happens when a fault is injected, part of an internal state is exposed, or a hardware response is statistically biased?</p>
+        <p>I have coauthored work on lightweight stream and block ciphers, physically unclonable functions, and machine learning for fault localization. This work spans research at the Indian Statistical Institute, Kolkata, and Nanyang Technological University, Singapore, including my undergraduate thesis on lightweight stream-cipher cryptanalysis.</p>
+        <div class="social-links research-profiles">
+          <a href="https://scholar.google.com/citations?user=Zch9DXMAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://dblp.org/pid/195/3353.html">DBLP</a>
+          <a href="https://orcid.org/0000-0003-3947-7036">ORCID</a>
+          <a href="https://www.researchgate.net/profile/Akhilesh-Siddhanti">ResearchGate</a>
+        </div>
+        <h2>Research themes</h2>
+        <div class="research-topics">
+          <article>
+            <h3>Machine learning for fault localization</h3>
+            <p>Using neural networks to infer where a fault occurred from differences between correct and faulty cipher outputs.</p>
+          </article>
+          <article>
+            <h3>Fault attacks &amp; lightweight cryptography</h3>
+            <p>Evaluating cipher implementations under fault-injection models and studying state and key recovery.</p>
+          </article>
+          <article>
+            <h3>Hardware security &amp; PUFs</h3>
+            <p>Analyzing input-response bias and reliability in arbiter-based physically unclonable functions.</p>
+          </article>
+        </div>
+        <h2>Journal articles</h2>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1049/cit2.12027">Differential fault location identification by machine learning</a>
+            </h3>
+            <p class="publication-meta">2021 · CAAI Transactions on Intelligence Technology, 6(1), 17–24</p>
+            <p class="publication-authors">Anubhab Baksi, Santanu Sarkar, <strong>Akhilesh Siddhanti</strong>, Ravi Anand, Anupam Chattopadhyay</p>
+            <p>Compared neural-network and correlation-based methods for locating injected faults in Grain-128a, LIZARD, and SIMON-32. The tested ML approach outperformed correlation on the same training and test data.</p>
+            <a class="publication-link" href="https://doi.org/10.1049/cit2.12027">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/s41635-018-0054-1">Certain Observations on ACORN v3 and Grain v1—Implications Towards TMDTO Attacks</a>
+            </h3>
+            <p class="publication-meta">2019 · Journal of Hardware and Systems Security, 3, 64–77</p>
+            <p class="publication-authors">
+              <strong>Akhilesh Anilkumar Siddhanti</strong>, Subhamoy Maitra, Nishant Sinha</p>
+            <p>Used SAT solvers to automate state-bit recovery equations and improve time-memory-data tradeoff parameters for ACORN v3 and Grain v1. Extends the SPACE 2017 paper.</p>
+            <a class="publication-link" href="https://doi.org/10.1007/s41635-018-0054-1">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1109/TC.2017.2773062">A TMDTO Attack Against Lizard</a>
+            </h3>
+            <p class="publication-meta">2018 · IEEE Transactions on Computers, 67(5), 733–739</p>
+            <p class="publication-authors">Subhamoy Maitra, Nishant Sinha, <strong>Akhilesh Siddhanti</strong>, Ravi Anand, Sugata Gangopadhyay</p>
+            <p>Developed a conditional time-memory-data tradeoff attack on Lizard by exploiting relationships between keystream output and internal state bits.</p>
+            <a class="publication-link" href="https://doi.org/10.1109/TC.2017.2773062">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1109/TC.2017.2700469">A Differential Fault Attack on Plantlet</a>
+            </h3>
+            <p class="publication-meta">2017 · IEEE Transactions on Computers, 66(10), 1804–1808</p>
+            <p class="publication-authors">Subhamoy Maitra, <strong>Akhilesh Siddhanti</strong>, Santanu Sarkar</p>
+            <p>Analyzed Plantlet under an injected-fault model and demonstrated an attack using approximately four faults. The result concerns fault-injection resistance, rather than security during normal operation.</p>
+            <a class="publication-link" href="https://doi.org/10.1109/TC.2017.2700469">Read publication ↗</a>
+          </article>
+        </div>
+        <h2>Conference papers</h2>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/978-3-030-35423-7_28">Analysis of the Strict Avalanche Criterion in Variants of Arbiter-Based Physically Unclonable Functions</a>
+            </h3>
+            <p class="publication-meta">2019 · INDOCRYPT 2019, LNCS 11898, 556–577</p>
+            <p class="publication-authors">
+              <strong>Akhilesh Anilkumar Siddhanti</strong>, Srinivasu Bodapati, Anupam Chattopadhyay, Subhamoy Maitra, Dibyendu Roy, Pantelimon Stănică</p>
+            <p>Developed a framework for assessing how input-bit changes affect arbiter-PUF responses, and proposed a variant with improved avalanche behavior and reliability.</p>
+            <a class="publication-link" href="https://doi.org/10.1007/978-3-030-35423-7_28">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/978-3-030-05378-9_6">Differential Fault Attack on SIMON with Very Few Faults</a>
+            </h3>
+            <p class="publication-meta">2018 · INDOCRYPT 2018, 107–119</p>
+            <p class="publication-authors">Ravi Anand, <strong>Akhilesh Siddhanti</strong>, Subhamoy Maitra, Sourav Mukhopadhyay</p>
+            <p>Combined statistical fault localization with SAT-based key recovery to study differential fault attacks on three SIMON variants.</p>
+            <a class="publication-link" href="https://doi.org/10.1007/978-3-030-05378-9_6">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/978-3-319-71501-8_14">Differential Fault Attack on Grain v1, ACORN v3 and Lizard</a>
+            </h3>
+            <p class="publication-meta">2017 · SPACE 2017, LNCS 10662, 247–263</p>
+            <p class="publication-authors">
+              <strong>Akhilesh Siddhanti</strong>, Santanu Sarkar, Subhamoy Maitra, Anupam Chattopadhyay</p>
+            <p>Developed cipher-specific fault attacks on Grain v1, ACORN v3, and Lizard, including a reduction in the number of faults required for Grain v1.</p>
+            <a class="publication-link" href="https://doi.org/10.1007/978-3-319-71501-8_14">Read publication ↗</a>
+          </article>
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1007/978-3-319-71501-8_15">Certain Observations on ACORN v3 and the Implications to TMDTO Attacks</a>
+            </h3>
+            <p class="publication-meta">2017 · SPACE 2017, LNCS 10662, 264–280</p>
+            <p class="publication-authors">
+              <strong>Akhilesh Anilkumar Siddhanti</strong>, Subhamoy Maitra, Nishant Sinha</p>
+            <p>Studied internal-state recovery from partial keystream information and its implications for conditional time-memory-data tradeoff attacks on ACORN v3.</p>
+            <a class="publication-link" href="https://doi.org/10.1007/978-3-319-71501-8_15">Read publication ↗</a>
+          </article>
+        </div>
+        <h2>Book chapter</h2>
+        <div class="publication-list">
+          <article class="publication">
+            <h3>
+              <a href="https://doi.org/10.1515/9783110642094-014">Differential fault attack on hardware stream ciphers—a technical survey</a>
+            </h3>
+            <p class="publication-meta">2019 · Combinatorics and Finite Fields, De Gruyter, 287–318</p>
+            <p class="publication-authors">
+              <strong>Akhilesh Anilkumar Siddhanti</strong>, Subhamoy Maitra</p>
+            <p>Surveyed differential fault attacks on hardware stream ciphers, including Grain, MICKEY, Trivium, Sprout, Plantlet, Lizard, and ACORN.</p>
+            <a class="publication-link" href="https://doi.org/10.1515/9783110642094-014">Read publication ↗</a>
+          </article>
+        </div>
+        <h2>Research talks</h2>
+        <article class="publication">
+          <h3>Differential fault attack on hardware stream ciphers: a technical survey</h3>
+          <p class="publication-meta">October 2018 · RICAM, Linz, Austria</p>
+          <p>Presented joint work with Subhamoy Maitra at the Pseudo-Randomness and Finite Fields workshop during RICAM’s Special Semester on Multivariate Algorithms and their Foundations in Number Theory.</p>
+          <a href="https://www.ricam.oeaw.ac.at/specsem/specsem2018/workshop1/">Workshop and speaker list ↗</a> · <a href="https://www.ricam.oeaw.ac.at/specsem/specsem2018/workshop1/Workshop1_Abstracts.pdf">Talk abstract ↗</a>
+        </article>
+        <p class="research-more">
+          <a href="index.html#Experience">Explore my engineering work at Salesforce →</a>
+        </p>
       </section>
     </main>
   </body>
