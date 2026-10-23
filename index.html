@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Akhilesh Siddhanti builds AI agents, ML recommendation services, and debugging tools at Salesforce. Explore his engineering work and cryptanalysis research.">
+    <meta name="description" content="Akhilesh Siddhanti — ML engineer at Salesforce building production retrieval, ranking, stacktrace clustering, evaluation, and developer-productivity tools.">
     <title>
             Akhilesh Siddhanti | About
         </title>
-    <link type="text/css" rel="stylesheet" href="s2.css?v=20261011-research">
+    <link type="text/css" rel="stylesheet" href="s2.css?v=20261023-resume3">
     <link rel="stylesheet" href="css/academicons.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="myscripts.js" defer></script>
@@ -39,73 +39,97 @@
     </aside>
     <main id="main">
       <section id="Home" class="main-content">
-        <p class="eyebrow">Software engineering · Applied machine learning · Cryptanalysis</p>
+        <p class="eyebrow">ML engineering · Developer productivity · Cryptanalysis</p>
         <h1>Akhilesh Siddhanti</h1>
         <div class="social-links home-actions">
           <a href="#Experience">Explore my engineering work</a>
           <a href="research.html">Read my research</a>
           <a href="https://www.linkedin.com/in/akhilesh-siddhanti">LinkedIn ↗</a>
         </div>
-        <p>I am a <strong>Senior Member of Technical Staff at Salesforce</strong>. I build software that helps engineers understand why tests fail, find relevant fixes, and automate parts of the debugging process.</p>
-        <p>My career brings together software engineering and applied machine learning. At Salesforce, my work spans Test Prioritizer and CI Analytics: I have designed AI agents for test investigation and resolution, built recommendation services, and improved the data pipelines behind these systems. Earlier, I worked on cryptanalysis at the Indian Statistical Institute and Nanyang Technological University.</p>
+        <p>I am an <strong>ML engineer and Senior Member of Technical Staff at Salesforce</strong>, building retrieval, ranking, and failure-analysis systems for developer productivity.</p>
+        <p>My work connects model experiments to production services: selecting and operating test-recommendation models, grouping stacktraces, evaluating AI-generated fixes, and automating engineering dashboards.</p>
         <div class="highlights">
           <div>
-            <strong>AI for debugging</strong>
-            <span>Built agents that investigate test failures, identify likely causes, and automate resolution.</span>
+            <strong>Retrieval &amp; ranking</strong>
+            <span>Owned test-recommendation retrieval, model benchmarking, retraining, and inference improvements.</span>
           </div>
           <div>
-            <strong>Recommendations &amp; infrastructure</strong>
-            <span>Developed ML recommendation services and optimized their feature and inference pipelines.</span>
+            <strong>Failure analysis &amp; evaluation</strong>
+            <span>Built stacktrace clustering and historical-fix retrieval, and owned test-fix agent evaluation.</span>
           </div>
           <div>
-            <strong>Cryptanalysis research</strong>
-            <span>Studied fault attacks on ciphers and applied machine learning to identify fault locations.</span>
+            <strong>Developer tools</strong>
+            <span>Built dashboard automation, CI monitoring, and engineering insights tools.</span>
           </div>
         </div>
-        <p>I earned my M.S. in Computer Science at Georgia Tech, following dual degrees in Computer Science and Mathematics at BITS Pilani.</p>
+        <p>Earlier, I researched cryptanalysis at the Indian Statistical Institute and Nanyang Technological University. I earned an M.S. in Computer Science at Georgia Tech and dual degrees in Computer Science and Mathematics at BITS Pilani.</p>
         <p>
-          <a class="resume-download" href="resume.pdf" download>Download my résumé (PDF)</a>
+          <a class="resume-download" href="resume.pdf?v=20261023" download="Akhilesh_Siddhanti_Resume.pdf">Download my résumé (PDF)</a>
         </p>
       </section>
       <section id="Experience" class="main-content">
         <h2>Career &amp; engineering work</h2>
-        <h3>Senior Member of Technical Staff · Salesforce</h3>
-        <p class="eyebrow">San Francisco · Jan 2021 – Present</p>
-        <p>At Salesforce, my work spans Test Prioritizer and CI Analytics. I focus on developer productivity: helping engineers investigate failing tests, identify the changes responsible, and find or apply a fix. I work on the agents, recommendation models, backend services, and data pipelines that make this possible.</p>
-        <ul class="career-work">
+        <h3>Salesforce</h3>
+        <p class="eyebrow">San Francisco, CA · Jan 2021 – Present</p>
+        <ol class="role-timeline" aria-label="Salesforce career progression">
           <li>
-            <strong>Built an AI agent for automated test-failure resolution</strong>
-            <p>I designed and scaled an agent that diagnoses test failures and uses similar historical failures and fixes to guide resolution. I integrated Sentence-BERT embeddings with Vertex AI Vector Search; the resulting system achieved 50% automated resolution accuracy.</p>
+            <strong>Senior Member of Technical Staff</strong>
+            <span>Aug 2024 – Present</span>
           </li>
           <li>
-            <strong>Built a conversational test-investigation agent</strong>
-            <p>I combined DBSCAN clustering, XGBoost, and LLM explanations to help engineers investigate failures and identify the pull requests likely to have caused them. The system achieved 70% assignment accuracy, reduced mean time to resolution by 20%, and saved more than 1,000 engineering hours annually.</p>
+            <strong>Member of Technical Staff</strong>
+            <span>Jan 2022 – Aug 2024</span>
           </li>
           <li>
-            <strong>Made ML recommendations useful during debugging</strong>
-            <p>I designed and deployed a recommendation service using natural-language features to find relevant results for engineers. I improved recall by 17 percentage points and reduced prediction time from 10 minutes to seconds, with support for real-time inference, batch predictions, and daily retraining.</p>
+            <strong>Associate Member of Technical Staff</strong>
+            <span>Jan 2021 – Jan 2022</span>
           </li>
-          <li>
-            <strong>Improved the data and signals behind the models</strong>
-            <p>I developed more than 10 ML features, including signals derived from abstract syntax trees, and built a file-mapping pipeline to address recurring failures. I also used LLMs to remove redundant stacktrace information while retaining useful debugging signals, reducing stacktrace volume by 96%.</p>
-          </li>
-          <li>
-            <strong>Optimized feature processing and inference</strong>
-            <p>I reduced feature-ingestion time from two weeks to two days and cut CPU usage by 97% by switching to batch prediction. I also optimized a feature pipeline to run four times faster with a substantially smaller memory footprint.</p>
-          </li>
-          <li>
-            <strong>Built tools that help engineers inspect test failures</strong>
-            <p>I built and owned company-wide test-information and predictive-performance dashboards, including a Test Debug View for searching and analyzing stacktraces. These tools help engineers investigate failures and assess recommendation performance.</p>
-          </li>
-        </ul>
+        </ol>
+        <p>My work spans Test Prioritizer and CI Analytics, from model selection and production inference to failure investigation and engineering observability.</p>
+        <article class="career-project" id="test-prioritizer">
+          <h4>Test Prioritizer for PRs</h4>
+          <p>I owned the TF-IDF retrieval service that recommends tests for a pull request. The service scores a corpus of 3 million tests per request for two downstream services, handling approximately 10,000 requests per day with a p95 latency of about five seconds.</p>
+          <p>
+            <strong>Model selection and production evaluation.</strong> I benchmarked TF-IDF against BERT, Word2Vec, and MiniLM. TF-IDF achieved 48.6% recall@2,500 compared with BERT’s 20%. In a production champion–challenger evaluation covering 5,000 PRs, recall@2,500 improved from 33.3% to 48.6%. I built hourly automated retraining, versioned model hot-swaps, and monitoring to operate the service.</p>
+          <p>
+            <strong>Ranking and rollout.</strong> I added normalized coverage-ranking and XML-to-test mapping features to the XGBoost model, which reached 58% recall@2,500. I also replaced approximately 1,000 per-test prediction calls with one score-equivalent batch prediction, reducing ranking latency and unblocking production rollout within three weeks.</p>
+          <p>
+            <strong>Compute and memory efficiency.</strong> I built AST-based test-minimization pipelines applicable to 7% of PRs, saving $100,000 in compute per month. Separately, I resolved out-of-memory failures in a 566,000-file similarity job by streaming chunked cosine similarity and pruning matrix columns from 1 billion to 1.2 million. This enabled the job to run within 4 GB while preserving numerical equivalence.</p>
+        </article>
+        <article class="career-project" id="stacktrace-clustering">
+          <h4>Stacktrace clustering and historical-fix retrieval</h4>
+          <p>I proposed, owned, and built a stacktrace clustering service processing more than a billion stacktraces. Using over 150 normalization patterns, the service reduced the number of distinct stacktrace variants by approximately 98%.</p>
+          <p>I implemented real-time MiniLM embeddings and indexing in Vertex AI Vector Search. The service enables grouping and historical-fix retrieval for the Autonomous Test Fix Agent, failure grouping for Intelligent Test Reassignment, and better identification of flaky tests and infrastructure failures.</p>
+        </article>
+        <article class="career-project" id="fix-agent-evaluation">
+          <h4>Autonomous Test Failure Fix Agent: evaluation and experimentation</h4>
+          <p>I owned evaluation and experimentation for a production test-fix agent serving more than 6,000 engineers, collaborating with a data scientist and another software engineer on architecture and development.</p>
+          <p>I built validation datasets, prompt experiments, model benchmarks, and ICE/CodeBLEU scoring to compare LLMs and assess the quality of generated fixes.</p>
+        </article>
+        <article class="career-project" id="dashboard-automation">
+          <h4>Dashboard creation through Claude and Cursor</h4>
+          <p>I built an LLM plugin for Claude and Cursor that generates live, database-backed Tableau dashboards from minimal prompts in under five minutes.</p>
+          <p>The plugin helps multiple internal teams create visualizations without needing prior Tableau experience.</p>
+        </article>
+        <article class="career-project" id="engineering-insights">
+          <h4>Engineering dashboards and CI observability</h4>
+          <p>I owned end-to-end development of company-wide engineering dashboards and backend services that track changes from work-item creation through customer deployment.</p>
+          <p>I built CI pipeline health and trend monitoring with automated Slack alerts for deviations, alongside test-information and predictive-performance dashboards and a Test Debug View for searching and analyzing test failures.</p>
+        </article>
+        <article class="career-project" id="agentic-prioritization">
+          <h4>Agentic Test Prioritization</h4>
+          <p class="work-status">In progress</p>
+          <p>I am developing an LLM agent that accesses hand-crafted test-selection features through tool calls. Early results show 28% recall with 25 selected tests, comparable to a baseline that achieves 28% recall with 700 tests.</p>
+        </article>
         <h3>Software Development Intern · Salesforce</h3>
         <p class="eyebrow">May 2020 – Aug 2020</p>
-        <p>I migrated services to a new Test Inventory service to improve reliability.</p>
+        <p>I migrated services from Apiary to a new Test Inventory service.</p>
         <h3>Tools I work with</h3>
         <p>
-          <strong>Backend and data:</strong> Java, Python, SQL, Spring Boot, REST APIs, Kafka, BigQuery, Elasticsearch.<br>
-          <strong>Machine learning:</strong> Sentence-BERT, Vertex AI, XGBoost, PyTorch, TensorFlow, scikit-learn, Hugging Face, FAISS.<br>
-          <strong>Infrastructure:</strong> AWS, GCP, Docker, Kubernetes, Jenkins, Terraform.</p>
+          <strong>Backend and data:</strong> Java, Python, C/C++, JavaScript, SQL, Spring Boot, Kafka, REST APIs, BigQuery, Elasticsearch, Pandas, NumPy.<br>
+          <strong>ML and retrieval:</strong> TF-IDF, XGBoost, MiniLM, Vertex AI Vector Search, FAISS, PyTorch, TensorFlow, scikit-learn, Hugging Face.<br>
+          <strong>Evaluation and operations:</strong> model benchmarking, recall@k, ICE, CodeBLEU, automated retraining, model versioning, monitoring.<br>
+          <strong>Infrastructure:</strong> AWS, GCP, Docker, Kubernetes, Jenkins, Terraform, CI/CD.</p>
       </section>
       <section id="Education" class="main-content margintop">
         <h2 class="about">Education</h2>
@@ -173,7 +197,7 @@
         </p>
       </section>
       <section id="Projects" class="main-content margintop">
-        <h2 class="about">Projects</h2>
+        <h2 class="about">Earlier projects</h2>
         <hr>
         <ol>
           <li>
@@ -213,9 +237,9 @@
       </section>
       <section id="Resume" class="main-content margintop">
         <h2 class="about">My Resume</h2>
-        <a class="resume-download" href="resume.pdf" download>Download résumé (PDF)</a>
+        <a class="resume-download" href="resume.pdf?v=20261023" download="Akhilesh_Siddhanti_Resume.pdf">Download résumé (PDF)</a>
         <hr>
-        <embed src="resume.pdf" width="100%" height="100%" type="application/pdf" title="Akhilesh Siddhanti resume"></embed>
+        <embed src="resume.pdf?v=20261023" width="100%" height="100%" type="application/pdf" title="Akhilesh Siddhanti resume"></embed>
       </section>
       <section class="main-content margintop">
         <h2 class="about">My social media links</h2>
